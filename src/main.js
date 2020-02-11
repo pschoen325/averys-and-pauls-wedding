@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import VueMq from 'vue-mq'
 import firebase from 'firebase/app'
 import VueLogger from 'vuejs-logger'
 const isProduction = process.env.NODE_ENV === 'production'
@@ -29,6 +30,15 @@ const firebaseConfig = {
 }
 
 Vue.use(VueLogger, options)
+
+Vue.use(VueMq, {
+  breakpoints: {
+    sm: 600,
+    md: 1100,
+    lg: Infinity,
+  }
+})
+
 
 firebase.initializeApp(firebaseConfig)
 
