@@ -2,7 +2,7 @@
   <div>
     <div class="masthead aligner"  :style="{ backgroundImage: `url('${appHeader}')` }">
       <div class="title-container">
-        <h1>Avery and Paul</h1>
+        <h1>We're engaged!</h1>
         <div class="count-down">
           <Timer />
         </div>
@@ -58,13 +58,13 @@ export default {
   }
 
   .masthead h1 {
-    font-size: 96px;
+    font-size: 30px;
     margin: 0
   }
 
   @media only screen and (min-width: 768px) {
     .masthead {
-      height: 60vh;
+      height: 70vh;
     }
     .title-container {
       max-width: 50%;
@@ -73,6 +73,9 @@ export default {
       max-width: 1000px;
       margin: auto;
     }
+    .masthead h1{
+      font-size: 72px;
+    }
     .story-container p {
       text-align: left;
     }
@@ -80,7 +83,7 @@ export default {
 
   @media only screen and (min-width: 1200px) {
     .masthead h1 {
-      font-size: 120px;
+      font-size: 88px;
     }
   }
 </style>

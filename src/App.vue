@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style lang="css">
-@import url('https://fonts.googleapis.com/css?family=Cabin|Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway&display=swap');
 
 /* 
 
@@ -38,14 +38,14 @@ body {
   margin: 0;
 }
 #app {
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Raleway', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #000;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Josefin Sans', sans-serif;
 }
 .aligner {
   display: flex;

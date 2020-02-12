@@ -3,13 +3,20 @@
     <mq-layout :mq="['sm', 'md']">
       <Slide>
         <router-link to="/">Story</router-link>
+        <router-link to="/gallery">Gallery</router-link>
+        <router-link to="/registry">Registry</router-link>
+        <router-link to="/rsvp">RSVP</router-link>
       </Slide>
+      <h1>Avery And Paul</h1>
     </mq-layout>
     <mq-layout mq="tablet+">
       <div class="desktop-navbar">
         <router-link class="home-btn" to="/">Avery And Paul</router-link>
         <div class="links">
           <router-link to="/">Story</router-link>
+          <router-link to="/gallery">Gallery</router-link>
+          <router-link to="/registry">Registry</router-link>
+          <router-link to="/rsvp">RSVP</router-link>
         </div>
       </div>
     </mq-layout>
@@ -30,6 +37,11 @@ export default {
 <style lang="scss">
   .navbar-wrapper {
     height: 0;
+    h1 {
+      color: white;
+      margin: 0;
+      text-align: center;
+    }
   }
   .bm-menu {
     background: #fff;
@@ -46,62 +58,58 @@ export default {
     color: #222;
   }
   .desktop-navbar {
-    position: fixed;
+    position: absolute;
     width: 100%;
     padding: 1em 0;
     z-index: 2;
-    background-color: white;
     .home-btn {
-      font-family: 'Great Vibes', cursive;
+      font-family: 'Raleway', sans-serif;
       float: left;
-      color: #222;
+      color: #fff;
       padding: 0 1em;
       text-decoration: none;
       margin: 0;
       font-size: 36px;
       font-weight: 300;
-       &:last-child{
-          margin-right: 0
-        }
       &:visited {
-        color: #222;
+        color: #fff;
         text-decoration: none;
       }
 
       &:hover {
-        color: #222;
+        color: #fff;
         text-decoration: none;
       }
 
       &:active {
-        color: #222;
+        color: #fff;
         text-decoration: none;
       }
     }
     .links {
       text-align: right;
       a {
-        color: #222;
-        padding: 0 1em;
+        color: #fff;
+        padding: 0;
         text-decoration: none;
         margin: 0.5em;
         font-size: 36px;
         font-weight: 300;
         &:last-child{
-          margin-right: 0
+          margin-right: 1em;
         }
         &:visited {
-          color: #222;
+          color: #fff;
           text-decoration: none;
         }
 
         &:hover {
-          color: #222;
-          text-decoration: underline #222;
+          color: #fff;
+          text-decoration: underline #fff;
         }
 
         &:active {
-          color: #222;
+          color: #fff;
           text-decoration: none;
         }
       }

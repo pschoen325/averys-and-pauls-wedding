@@ -17,6 +17,7 @@
     "sass-loader": "^8.0.2",
     "vue": "^2.6.11",
     "vue-burger-menu": "^2.0.3",
+    "vue-gallery": "^2.0.1",
     "vue-mq": "^1.0.1",
     "vue-router": "^3.1.5",
     "vuejs-logger": "^1.5.4"

@@ -52,13 +52,12 @@
   .timer-list li {
     flex: 1 1 0;
     min-width: 40%;
-    font-size: 48px;
-    font-family: 'Great Vibes', cursive;    
+    font-size: 24px;
+    font-family: 'Josefin Sans', sans-serif; 
   }
 
   .timer-list div {
-    font-family: 'Cabin', sans-serif;
-    font-size: 72px;
+    font-size: 36px;
   }
 
   @media only screen and (min-width: 769px) {

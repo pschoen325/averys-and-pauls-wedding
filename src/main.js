@@ -6,6 +6,8 @@ import router from './router'
 import VueMq from 'vue-mq'
 import firebase from 'firebase/app'
 import VueLogger from 'vuejs-logger'
+import VueGallery from 'vue-gallery'
+
 const isProduction = process.env.NODE_ENV === 'production'
  
 const options = {
@@ -30,7 +32,7 @@ const firebaseConfig = {
 }
 
 Vue.use(VueLogger, options)
-
+Vue.component('VGallery', VueGallery)
 Vue.use(VueMq, {
   breakpoints: {
     sm: 600,
